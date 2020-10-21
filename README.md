@@ -3,9 +3,9 @@
 This Nodejs module encapsulates Aerial Access FHIR APIs that helps developers bootstrap their development process
 
 ## Installation
-
+```
 $ npm install aerialaccess-nodejs
-
+```
 ## Usages
 
 ### Claim APIs
