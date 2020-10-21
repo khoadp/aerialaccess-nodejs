@@ -20,7 +20,7 @@ const claimService = new aerialaccess(apiKey, baseUrl).Claim;
 
 // Execute claim service
 const identifier = 123
-const claimResponse = await claimService.getClaim(identifier)
+const claimResponse = claimService.getClaim(identifier)
 console.log(claimResponse)
 ```
 
@@ -36,7 +36,7 @@ const patientService = new aerialaccess(apiKey, baseUrl).Patient;
 
 // Execute patient service
 const identifier = 123
-const patientResponse = await patientService.getPatient(identifier)
+const patientResponse = patientService.getPatient(identifier)
 console.log(patientResponse)
 
 ```

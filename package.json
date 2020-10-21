@@ -1,5 +1,5 @@
 {
-  "name": "aerialaccess-nodejs-module",
+  "name": "aerialaccess-nodejs",
   "version": "1.0.0",
   "description": "Aerial Access FHIR Nodejs Module",
   "main": "index.js",
