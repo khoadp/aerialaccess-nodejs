@@ -1,0 +1,28 @@
+{
+  "name": "aerialaccess-nodejs-module",
+  "version": "1.0.0",
+  "description": "Aerial Access FHIR Nodejs Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khoadp/aerialaccess-nodejs.git"
+  },
+  "keywords": [
+    "Aerial",
+    "Access",
+    "FHIR",
+    "Nodejs"
+  ],
+  "author": "Khoa Pham <khoa.pham@kodeplus.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khoadp/aerialaccess-nodejs/issues"
+  },
+  "homepage": "https://github.com/khoadp/aerialaccess-nodejs#readme",
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}
