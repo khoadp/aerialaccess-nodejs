@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Aerial Access FHIR Nodejs Module",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/khoadp/aerialaccess-nodejs.git"
@@ -14,7 +11,9 @@
     "Aerial",
     "Access",
     "FHIR",
-    "Nodejs"
+    "APIs",
+    "Claim",
+    "Patient"
   ],
   "author": "Khoa Pham <khoa.pham@kodeplus.com>",
   "license": "ISC",
