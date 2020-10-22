@@ -11,12 +11,12 @@ $ npm install aerialaccess-nodejs
 ### Claim APIs
 
 ```javascript
-const { aerialaccess } = require('aerialaccess-nodejs')
+const aerialaccess = require('aerialaccess-nodejs')
 
 // Initialize claim service
 const apiKey = 'API_KEY'
 const baseUrl = 'BASE_URL' // https://fhir.medicision.com
-const claimService = new aerialaccess(apiKey, baseUrl).Claim;
+const claimService = new aerialaccess.Claim(baseUrl, apiKey);
 
 // Execute claim service
 const identifier = 123
@@ -27,12 +27,12 @@ console.log(claimResponse)
 ### Patient APIs
 
 ```javascript
-const { aerialaccess } = require('aerialaccess-nodejs')
+const aerialaccess = require('aerialaccess-nodejs')
 
 // Initialize patient service
 const apiKey = 'API_KEY'
 const baseUrl = 'BASE_URL' // https://fhir.medicision.com
-const patientService = new aerialaccess(apiKey, baseUrl).Patient;
+const patientService = new aerialaccess.Patient(baseUrl, apiKey);
 
 // Execute patient service
 const identifier = 123
