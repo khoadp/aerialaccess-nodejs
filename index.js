@@ -1,5 +1,5 @@
-import Claim from "./lib/claim"
-import Patient from "./lib/patient"
+const Claim = require("./lib/claim");
+const Patient = require("./lib/patient")
 
 module.exports.Claim = Claim
 module.exports.Patient = Patient
