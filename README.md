@@ -14,13 +14,17 @@ $ npm install aerialaccess-nodejs
 const aerialaccess = require('aerialaccess-nodejs')
 
 // Initialize claim service
-const apiKey = 'API_KEY'
 const baseUrl = 'BASE_URL' // https://fhir.medicision.com
-const claimService = new aerialaccess.Claim(baseUrl, apiKey);
+const claimService = new aerialaccess.Claim(baseUrl)
+
+// Get access token
+const username = "USER_NAME";
+const password = "PASSWORD"
+const token = claimService.getJWTToken(username, password);
 
 // Execute claim service
 const identifier = 123
-const claimResponse = claimService.getClaim(identifier)
+const claimResponse = claimService.getClaim(token, identifier)
 console.log(claimResponse)
 ```
 
@@ -30,13 +34,16 @@ console.log(claimResponse)
 const aerialaccess = require('aerialaccess-nodejs')
 
 // Initialize patient service
-const apiKey = 'API_KEY'
 const baseUrl = 'BASE_URL' // https://fhir.medicision.com
-const patientService = new aerialaccess.Patient(baseUrl, apiKey);
+const patientService = new aerialaccess.Patient(baseUrl);
+
+// Get access token
+const username = "USER_NAME";
+const password = "PASSWORD"
+const token = patientService.getJWTToken(username, password);
 
 // Execute patient service
 const identifier = 123
-const patientResponse = patientService.getPatient(identifier)
+const patientResponse = patientService.getPatient(token, identifier)
 console.log(patientResponse)
-
 ```
